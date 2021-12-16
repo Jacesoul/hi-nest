@@ -1,0 +1,6 @@
+### Nest.js 
+- NestJS는 node.js 위에서 움직이는 프레임워크인데 node.js에 백엔드를 구성할수 있도록 해준다. 
+- NestJS는 express.js를 이용한다.
+- NestJS는 미리 세팅된 여러 기능들을 제공한다. 
+- npm i -g @nestjs/cli
+- nest new project-name
