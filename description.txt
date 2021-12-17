@@ -17,3 +17,5 @@
 ### REST API
 - nest g co movies => movies 컨트롤러 생성
 - 무언가가 필요하면 내가 직접 요청해야한다.
+- Single-responsibility principle은 하나의 moudle, 혹은 function이 하나의 기능을 꼭 책임져야 한다는것이다.
+- nest g s movies => movies 서비스 생성
