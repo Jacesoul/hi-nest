@@ -38,3 +38,8 @@
 - 그렇지만 req나 req 같은 Express 객체를 직접적으로 사용하는것이 좋은 방법은 아니다. NestJS는 express와 fastify 두개의 프레임워크에서 돌아가기 때문이다. 
 - NestJS 코드만 사용한다면 Express와 Fastify 사이에 전환하고 싶을때 NestJS가 알아서 해준다.
 - Fastify가 Express보다 2배 빠르다. 
+
+### UNIT TESTING
+- jest는 자바스크립트를 아주 쉽게 테스팅하는 npm 패키지이다.
+- 유닛 테스팅은 모든 function을 따로 테스트하는것이다. 서비스에서 분리된 유닛을 테스트 
+- end-to-end(e2e) 테스트는 모든 시스템을 테스트하는것이다.
