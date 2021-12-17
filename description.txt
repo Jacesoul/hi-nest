@@ -28,3 +28,9 @@
 - ValidationPipe의 forbidNonWhitelisted 옵션은 존재하지 않은 요소가 잘못되었다고 알려준다. 
 - ValidationPipe의 transform 옵션은 유저들의 보낸것을 자동으로 우리가 원하는 실제 타입으로 변환해준다.
 - npm i @nestjs/mapped-types  => 타입을 변환시키고 사용할수 있게하는 패키지다. DTO를 변환시키는것을 도와준다.
+- 기본적으로 app.module은 AppService와 AppController만 가져야한다.
+- nest g mo movies => movies 모듈 생성
+- 앱을 만들때 모듈로 분리햐야 좋다.
+- 모듈에서 provider와 controller를 import해주고 있기 때문에 private readonly moviesService로 MoviesService 타입을 가져올수가 있다. 이것을 Dependency Injection이라고 한다.
+- NestJS가 MovieMoudle에 MoviesService를 import하고 Controller에 inject(주입)한다.
+- 그렇기에 movies.service.ts에 @Injectable() 데코레이터가 있는것이다.
