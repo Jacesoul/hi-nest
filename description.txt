@@ -19,3 +19,12 @@
 - 무언가가 필요하면 내가 직접 요청해야한다.
 - Single-responsibility principle은 하나의 moudle, 혹은 function이 하나의 기능을 꼭 책임져야 한다는것이다.
 - nest g s movies => movies 서비스 생성
+- DTO(Data Transfer Object)는 데이터 전송 객체이다. 
+- DTO를 쓰는 한가지 이유는 프로그래머로서 코드를 더 간결하게 만들수 있게 해준다. 또한 NestJS가 들어오는 쿼리에 대해 유효성을 검사할수 있게 해준다.   
+- app.useGlobalPipes(new ValidationPipe()); 유효성 검사를 위해 main.ts에 넣어준다. 
+- npm i class-validator class-transformer
+- DTO에 데코레이터로 @IsString(), @IsNumber()를 적용하면 유효성검사가 가능하다.
+- ValidationPipe의 whitelist 옵션은 true로 설정하면 아무 decorator도 없는 어떠한 property의 object를 거른다.
+- ValidationPipe의 forbidNonWhitelisted 옵션은 존재하지 않은 요소가 잘못되었다고 알려준다. 
+- ValidationPipe의 transform 옵션은 유저들의 보낸것을 자동으로 우리가 원하는 실제 타입으로 변환해준다.
+- npm i @nestjs/mapped-types  => 타입을 변환시키고 사용할수 있게하는 패키지다. DTO를 변환시키는것을 도와준다.
