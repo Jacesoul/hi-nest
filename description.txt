@@ -44,3 +44,4 @@
 - 유닛 테스팅은 모든 function을 따로 테스트하는것이다. 서비스에서 분리된 유닛을 테스트 
 - end-to-end(e2e) 테스트는 모든 시스템을 테스트하는것이다.
 - it은 individual test(개별 테스트)의 줄임말
+- NestJS의 장점때문에 테스트안에서 MoviesService로 접근할수있다.
