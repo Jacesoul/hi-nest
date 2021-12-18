@@ -45,3 +45,7 @@
 - end-to-end(e2e) 테스트는 모든 시스템을 테스트하는것이다.
 - it은 individual test(개별 테스트)의 줄임말
 - NestJS의 장점때문에 테스트안에서 MoviesService로 접근할수있다.
+
+### E2E TESTING
+- e2e테스트는 movie와 관련된 어플리케이션의 모든 부분을 테스트할때 필요하다. 
+- request(app.getHttpServer())는 http://localhost:3000/같은걸 하지 않기위해 사용한다.
